@@ -6,7 +6,7 @@ package ShutOff;
  * @author: Mr.Yqy
  * @create: 2019-03-23 14:52
  **/
-public class Exception_Stop implements Runnable{
+public class ExceptionEnd implements Runnable{
 
     /**
      * 使用抛出异常的方式停止线程的好处

@@ -6,7 +6,7 @@ package ShutOff;
  * @author: Mr.Yqy
  * @create: 2019-03-23 15:28
  **/
-public class Return_Stop implements Runnable{
+public class ReturnEnd implements Runnable{
     /**
      * 虽然return也可以实现结束线程的效果但是还是更建议使用
      * 抛出异常的方式结束线程

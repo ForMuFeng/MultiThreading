@@ -8,11 +8,11 @@ package ShutOff;
  **/
 public class Test {
     public static void main(String[] args) {
-        Exception_Stop exception_stop=new Exception_Stop();
+        ExceptionEnd exception_stop=new ExceptionEnd();
         exception_stop.run();
 
         System.out.println("-----------------分界线----------------------");
-        Return_Stop return_stop=new Return_Stop();
+        ReturnEnd return_stop=new ReturnEnd();
         return_stop.run();
     }
 }
