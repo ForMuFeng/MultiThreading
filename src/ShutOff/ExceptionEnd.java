@@ -6,7 +6,7 @@ package ShutOff;
  * @author: Mr.Yqy
  * @create: 2019-03-23 14:52
  **/
-public class ExceptionEnd implements Runnable{
+public class ExceptionEnd extends Thread{
 
     /**
      * 使用抛出异常的方式停止线程的好处
@@ -19,9 +19,8 @@ public class ExceptionEnd implements Runnable{
     public void run() {
         System.out.println(this.getClass().getName()+"开始工作");
         try {
-            System.out.println("运行状态："+Thread.interrupted());
-            Thread.sleep(1000);
-            if (true){
+            Thread.sleep(2000);
+            if (Thread.interrupted()){
                 throw  new InterruptedException();
             }
             Thread.sleep(1000);
